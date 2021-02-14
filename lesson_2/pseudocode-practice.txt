@@ -1,0 +1,75 @@
+// a function that returns the sum of two numbers
+>> Casual Pseudocode
+Given 2 numbers, n1 and n2.
+
+Add the 2 numbers and return the result
+
+>> Formal Pseducode
+START
+
+# Given 2 numbers n1 and n2:
+
+Return the result of (n1 + n2)
+
+END
+
+// a function that takes an array of strings, and returns a string that is all those strings concatenated together
+
+>> Casual
+Given an array of strings.
+
+Iterate through the collection one by one.
+  - save the first value as the starting value
+  - for each iteration, append the current value to the saved value
+
+After iterating through the collection, return the saved value.
+
+>> Formal
+START
+# Given an array of strings.
+
+SET iterator = 1
+SET result = first value in the array
+
+WHILE iterator <= length of the given array
+  SET currentValue = value within the array at space "iterator"
+  result = result + currentValue
+
+  iterator = iterator + 1
+
+PRINT result
+
+END
+
+// a function that takes an array of integers, and returns a new array with every other element
+
+>> Casual
+Given an array of integers.
+
+While iterating through the given array
+- check if the iterator is even
+  - if yes, save the currentValue to a new array
+  - otherwise, do nothing
+
+After iterating through the collection, return the new array
+
+>> Formal
+START
+
+# Given an array of integers.
+
+SET iterator = 0
+SET result = []
+
+WHILE iterator <= length of the given arary
+  SET currentValue = the element at the iterator position
+  IF iterator is even
+    add the currentValue to the result array
+  ELSE
+    skip to the next iteration
+
+  iterator = iterator + 1
+  
+PRINT result
+
+END
