@@ -1,0 +1,18 @@
+function integerToString(number) {
+  const DIGITS = '0123456789';
+
+  let result = '';
+
+  do {
+    let single = number % 10;
+    number = Math.floor(number / 10);
+    result = DIGITS[single] + result;
+  } while (number > 0)
+
+  return result;
+}
+
+console.log(integerToString(-4321) === '4321');        // "4321"
+console.log(integerToString(0) === '0');           // "0"
+console.log(integerToString(5000) === '5000');        // "5000"
+console.log(integerToString(1234567890) === '1234567890');  // "1234567890"
